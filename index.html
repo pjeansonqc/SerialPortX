@@ -4,8 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SerialPortX – Smart Serial Debugging</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      max-width: 700px;
+    }
+    h1 { font-size: 2em; }
+    input[type="email"] {
+      padding: 0.7em;
+      font-size: 1em;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 0.7em 1.2em;
+      font-size: 1em;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 0.5em;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    form {
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; margin: 2em; max-width: 700px;">
+<body>
+
   <h1>🔌 SerialPortX</h1>
   <p><strong>Cross-platform serial port debugger for embedded developers</strong></p>
 
@@ -21,11 +54,13 @@
 
   <h2>📧 Get Early Access</h2>
   <p>We’re in development! Sign up to get the free version when it's ready:</p>
-  <form action="https://forms.gle/2y6FMuwiJrK9fuMQ6" method="post" target="_blank">
-    <input type="email" name="email" placeholder="Your email" required style="padding:0.5em;" />
-    <button type="submit" style="padding:0.5em;">Notify Me</button>
+
+  <form action="https://formspree.io/f/xqaqakop" method="POST">
+    <input type="email" name="email" placeholder="Your email" required />
+    <button type="submit">Notify Me</button>
   </form>
 
-  <p style="margin-top:2em; font-size:0.9em;">Built by an embedded dev tired of clunky tools. Made with C++ & Qt.</p>
+  <p style="font-size: 0.9em;">Built with ❤️ in C++/Qt by a developer who needed this tool himself.</p>
+
 </body>
 </html>
