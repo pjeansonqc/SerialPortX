@@ -1,7 +1,7 @@
 # 🔌 SerialPortX
 
 **Cross-platform serial port debugger for embedded developers**  
-Built with C++ and Qt to simplify serial communication, logging, and data visualization across Windows, Linux, and macOS.
+Built in C++ and Qt to streamline serial communication and debugging across Windows, Linux, and macOS.
 
 ---
 
@@ -13,52 +13,56 @@ Built with C++ and Qt to simplify serial communication, logging, and data visual
 - Save/load device profiles
 - Export logs to CSV
 - Offline & lightweight
-- Optional: Real-time charting for numeric data (e.g. temp, RPM, voltage)
+- (Optional) Real-time charting of numeric data (e.g. voltage, RPM, temperature)
 
 ---
 
 ## 🚀 Live Preview
 
-🔗 [https://github.com/pjeansonqc/SerialPortX](https://github.com/pjeansonqc/SerialPortX)  
-> 🧪 View the landing page and join the early access list!
+Check out the landing page:  
+🔗 [https://pjeansonqc.github.io/SerialPortX/](https://pjeansonqc.github.io/SerialPortX/)
 
 ---
 
 ## 💌 Join the Early Access List
 
-We’re currently building SerialPortX and looking for feedback from developers like you!
+We’re building SerialPortX and would love your feedback.
 
 👉 [Click here to sign up](https://formspree.io/f/xqaqakop)  
-You'll receive updates and a free copy of the tool when it's ready.
+You’ll get notified when the free version is ready and have a say in the final features.
 
 ---
 
 ## 🛠 Tech Stack
 
-- C++
-- Qt 6 (or Qt 5)
-- QSerialPort
-- CMake
-- HTML/CSS (Landing Page)
-- GitHub Pages + Formspree (for email collection)
+- **C++17**
+- **Qt 6** (or Qt 5.15+)
+- **QSerialPort**
+- **CMake** for build configuration
+- **HTML/CSS** for this landing page
+- **GitHub Pages** + **Formspree** for hosting and email collection
 
 ---
 
 ## 🤝 Contributing
 
-Want to help shape SerialPortX or test the MVP?  
-Open an issue or reach out after joining the early-access list.
+Want to help test or shape SerialPortX?  
+- Star ⭐ the repo to show support  
+- Open an [issue](https://github.com/pjeansonqc/SerialPortX/issues) with feature requests or feedback  
+- Or join the early access list to be part of development
 
 ---
 
 ## 📄 License
 
-This landing page and form code is licensed under the [MIT License](LICENSE).  
-The SerialPortX tool itself will be released under a developer-friendly license (TBD).
+This landing page is available under the [MIT License](LICENSE).  
+The SerialPortX application source code and license will be published in this repository when ready.
 
 ---
 
-## 💬 Contact
+## 👋 Author
 
-Made by [@pjeansonqc](https://github.com/pjeansonqc)  
-🔧 Built because clunky serial tools shouldn’t waste your time.
+**Patrick Jeanson**  
+📍 Based in Quebec, Canada  
+🔧 Built this tool out of personal need for better embedded serial debugging  
+🌐 [https://github.com/pjeansonqc](https://github.com/pjeansonqc)
