@@ -1,101 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SerialPortX – Smart Serial Debugging</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 2em;
-      max-width: 700px;
-    }
-    h1 { font-size: 2em; }
-    label {
-      display: block;
-      margin-top: 1em;
-      font-weight: bold;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea,
-    select {
-      width: 100%;
-      padding: 0.6em;
-      margin-top: 0.4em;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      padding: 0.7em 1.2em;
-      font-size: 1em;
-      background-color: #007acc;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 1em;
-    }
-    button:hover {
-      background-color: #005fa3;
-    }
-  </style>
-</head>
-<body>
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 2em;
+    max-width: 700px;
+  }
+  h1 { font-size: 2em; }
+  label {
+    display: block;
+    margin-top: 1.2em;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    display: block;
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 0.4em;
+  }
+  button {
+    margin-top: 1.5em;
+    padding: 0.7em 1.2em;
+    font-size: 1em;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #005fa3;
+  }
+</style>
 
-  <h1>🔌 SerialPortX</h1>
-  <p><strong>Cross-platform serial port debugger for embedded developers</strong></p>
+<!-- Form block (in body) -->
+<form action="https://formspree.io/f/xqaqakop" method="POST">
+  <label for="email">Your email (for early access)</label>
+  <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-  <h2>🚀 Features</h2>
-  <ul>
-    <li>Connect to any serial port (USB, UART, etc.)</li>
-    <li>Timestamped logs</li>
-    <li>Regex filtering</li>
-    <li>Save/load device profiles</li>
-    <li>Export logs to CSV</li>
-    <li>Offline + lightweight</li>
-  </ul>
+  <label for="os">What OS do you use for development?</label>
+  <select id="os" name="os">
+    <option value="Windows">Windows</option>
+    <option value="Linux">Linux</option>
+    <option value="macOS">macOS</option>
+    <option value="Other">Other</option>
+  </select>
 
-  <h2>📧 Join the Early Access List + Help Us Build It</h2>
-  <form action="https://formspree.io/f/xqaqakop" method="POST">
+  <label for="devices">What devices do you debug with serial?</label>
+  <input type="text" id="devices" name="devices" placeholder="e.g. STM32, ESP32, Arduino" />
 
-    <label for="email">Your email (for early access)</label>
-    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+  <label for="wishes">What do you wish current serial tools did better?</label>
+  <textarea id="wishes" name="wishes" rows="3" placeholder="Free-form thoughts..."></textarea>
 
-    <label for="os">What OS do you use for development?</label>
-    <select id="os" name="os">
-      <option value="Windows">Windows</option>
-      <option value="Linux">Linux</option>
-      <option value="macOS">macOS</option>
-      <option value="Other">Other</option>
-    </select>
+  <label for="charts">Would live numeric charting be useful?</label>
+  <select id="charts" name="charts">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    <option value="Not sure">Not sure</option>
+  </select>
 
-    <label for="devices">What devices do you debug with serial?</label>
-    <input type="text" id="devices" name="devices" placeholder="e.g. STM32, ESP32, Arduino" />
+  <label for="price">What would you pay for such a tool?</label>
+  <select id="price" name="price">
+    <option value="Free only">Free only</option>
+    <option value="$5–$10">$5–$10</option>
+    <option value="$10–$20">$10–$20</option>
+    <option value="$20+">$20+</option>
+  </select>
 
-    <label for="wishes">What do you wish current serial tools did better?</label>
-    <textarea id="wishes" name="wishes" rows="3" placeholder="Free-form thoughts..."></textarea>
-
-    <label for="charts">Would live numeric charting be useful?</label>
-    <select id="charts" name="charts">
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-      <option value="Not sure">Not sure</option>
-    </select>
-
-    <label for="price">What would you pay for such a tool?</label>
-    <select id="price" name="price">
-      <option value="Free only">Free only</option>
-      <option value="$5–$10">$5–$10</option>
-      <option value="$10–$20">$10–$20</option>
-      <option value="$20+">$20+</option>
-    </select>
-
-    <button type="submit">Submit & Join List</button>
-  </form>
-
-  <p style="margin-top: 2em; font-size: 0.9em;">No spam. We’ll email you when the tool is ready for download. – Built by a fellow dev in Qt/C++.</p>
-
-</body>
-</html>
+  <button type="submit">Submit & Join List</button>
+</form>
