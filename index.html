@@ -56,8 +56,39 @@
   <p>We’re in development! Sign up to get the free version when it's ready:</p>
 
   <form action="https://formspree.io/f/xqaqakop" method="POST">
-    <input type="email" name="email" placeholder="Your email" required />
-    <button type="submit">Notify Me</button>
+     <label for="email">Your email (for early access)</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <label for="os">What OS do you use for development?</label>
+    <select id="os" name="os">
+      <option value="Windows">Windows</option>
+      <option value="Linux">Linux</option>
+      <option value="macOS">macOS</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="devices">What devices do you debug with serial?</label>
+    <input type="text" id="devices" name="devices" placeholder="e.g. STM32, ESP32, Arduino" />
+
+    <label for="wishes">What do you wish current serial tools did better?</label>
+    <textarea id="wishes" name="wishes" rows="3" placeholder="Free-form thoughts..."></textarea>
+
+    <label for="charts">Would live numeric charting be useful?</label>
+    <select id="charts" name="charts">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="Not sure">Not sure</option>
+    </select>
+
+    <label for="price">What would you pay for such a tool?</label>
+    <select id="price" name="price">
+      <option value="Free only">Free only</option>
+      <option value="$5–$10">$5–$10</option>
+      <option value="$10–$20">$10–$20</option>
+      <option value="$20+">$20+</option>
+    </select>
+
+    <button type="submit">Submit & Join List</button>
   </form>
 
   <p style="font-size: 0.9em;">Built with ❤️ in C++/Qt by a developer who needed this tool himself.</p>
