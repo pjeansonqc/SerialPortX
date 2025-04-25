@@ -19,7 +19,7 @@ Built with C++ and Qt to simplify serial communication, logging, and data visual
 
 ## 🚀 Live Preview
 
-🔗 [https://pjeansonqc.github.io/SerialPortX/](https://pjeansonqc.github.io/SerialPortX/)  
+🔗 [https://github.com/pjeansonqc/SerialPortX](https://github.com/pjeansonqc/SerialPortX)  
 > 🧪 View the landing page and join the early access list!
 
 ---
