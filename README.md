@@ -22,6 +22,6 @@ Stop fighting with PuTTY or RealTerm. SerialPortX is designed for developers who
 ### 📧 Want early access?
 Get notified when SerialPortX launches (and receive a **free basic version**!)
 
-[ 👉 Sign up for early access ](https://forms.gle/2y6FMuwiJrK9fuMQ6)
+[ 👉 Sign up for early access ](https://pjeansonqc.github.io/SerialPortX/)
 
 
